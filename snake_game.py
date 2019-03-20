@@ -27,7 +27,7 @@ try:
 
         if snake[0][0] in [sh, 0] or snake[0][1] in [0, sw] or snake[0] in snake[1:]:
             curses.endwin()
-            
+
             quit()
 
 
@@ -44,6 +44,7 @@ try:
 
         snake.insert(0,new_head)
 
+        curses.echo()
         if snake[0] == food:
             food = None
             while food is None:
@@ -53,6 +54,7 @@ try:
                 ]
                 food = nf #if nf not in snake else Non
                 w.addch(food[0], food[1], curses.ACS_PI)
+
         else:
             tail = snake.pop()
         w.addch(tail[0], tail[1], ' ')
