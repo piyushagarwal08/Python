@@ -4,21 +4,16 @@ import sys
 flames = ["friends","love","affectionate","marriage","enemies","siblings"]
 boy = list(input("enter name of boy: ").lower())
 girl = list(input("enter name of girl: ").lower())
-#print(boy,girl)
 try:
     common = [i for i in boy if i in girl]
-    common = set(common)
-    #print(common)
+    common = set(common)  
 except:
     print("huh...you are just friends")
     sys.exit()
 for i in common:
     boy.remove(i)
     girl.remove(i)
-#print(boy)
-#print(girl)
 total_similar = len(boy)+len(girl)
-
 while(len(flames)!=1):
     count = (total_similar%len(flames))-1
     if count>0:
@@ -27,7 +22,6 @@ while(len(flames)!=1):
         flames = right+left
     else:
         flames = flames[:len(flames)-1]
-
 print(flames[0])
         
         
