@@ -1,4 +1,4 @@
-#flames = {"f":"friends","l":"love","a":"affectionate","m":"marriage","e":"enemies","s":"sister"}
+flamess = {"friends":"best friends always together","love":"wah wah ram ji...jodi kya banai","affectionate":"ek tarfa pyaar ki ....baat he kuch aur hoti hai,\nits the most beautiful feeling in the world","marriage":"milan abhi aadha, adhura hai...love birds","enemies":"ladai ladai maaf karo... pyari se ek takraar karo","sister":"bhaiya mere rakhi ka bandhan tum nibhana...hehe"}
 print("This is the Realtion Calculator")
 import sys
 flames = ["friends","love","affectionate","marriage","enemies","siblings"]
@@ -23,6 +23,7 @@ while(len(flames)!=1):
     else:
         flames = flames[:len(flames)-1]
 print(flames[0])
+print(flamess[flames[0]])
         
         
     
