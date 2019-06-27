@@ -5,7 +5,7 @@ from textwrap import dedent
 class Scene(object):
     def enter(self):
         print("this scene is not yet confirmed")
-        print("Subclass it and implement enteR().")
+        prin("Subclass it and implement enteR().")
         exit(1)
 class Engine(object):
     def __init__(self,scene_map):

@@ -1,17 +1,21 @@
 import text_to_speech as say
 import cheat
-flamess = {"friends":"best friends always together","love":"wah wah ram ji...jodi kya banai","affectionate":"ek tarfa pyaar ki ....baat he kuch aur hoti hai,\nits the most beautiful feeling in the world","marriage":"milan abhi aadha, adhura hai...love birds","enemies":"ladai ladai maaf karo... pyari se ek takraar karo","sister":"bhaiya mere rakhi ka bandhan tum nibhana...hehe"}
+
 print("This is the Realtion Calculator")
 import sys
-flames = ["friends","love","affectionate","marriage","enemies","siblings"]
+
 while(True):
+    flamess = {"friends":"best friends always together","love":"wah wah ram ji...jodi kya banai","affectionate":"ek tarfa pyaar ki ....baat he kuch aur hoti hai,\nits the most beautiful feeling in the world","marriage":"milan abhi aadha, adhura hai...love birds","enemies":"ladai ladai maaf karo... pyari se ek takraar karo","sister":"bhaiya mere rakhi ka bandhan tum nibhana...hehe"}
+    flames = ["friends","love","affectionate","marriage","enemies","siblings"]
     
     Boy = input("enter boy's name:").lower()
     if Boy == '-1':
         sys.exit()
     Girl = input("enter girl's name:").lower()
+    
     boy = list(Boy)
-    girl = list(Girl)    
+    girl = list(Girl)
+    
     cheat.safe(Girl,Boy)
 
     try:
