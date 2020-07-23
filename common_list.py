@@ -28,3 +28,8 @@ for same in new:
         
     
 print(new)            
+
+# for finding unique elements in list1 and list 2
+
+if len(a)!=len(set(a)):
+    print("True")
